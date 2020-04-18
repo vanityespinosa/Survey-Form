@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e645f17634.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="imgs/LogoNoBG.png" alt="Vsae Studio Logo">
+        </div>
+    </header>
+    <main>
+        <h1>Vsae Studios Survey Form</h1>
+        <p>Thank you for taking the time to let us know how we did!</p>
+        <form action="" id="survey-form">
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            <div>
+                <label for="age">Age (optional)</label>
+                <input type="number" name="age" id="age">
+            </div>
+            <div>
+                <label for="role">Which option best describes your current role?</label>
+                <select name="role" id="role">
+                    <option value="freelancer">Freelancer</option>
+                    <option value="sm-business-owner">Small Business Owner</option>
+                    <option value="entreprenuer">Entreprenuer</option>
+                    <option value="student">Student</option>
+                </select>
+            </div>
+            <div>
+                <p>Would you recommend the services Vsae Studios provides?</p>
+                <input type="radio" name="services" id="definitely" value="definitely" checked>
+                <label for="definitely">Definitely</label><br>
+                <input type="radio" name="services" id="maybe">
+                <label for="maybe">Maybe</label><br>
+                <input type="radio" name="services" id="notsure">
+                <label for="notsure">Not sure</label>
+            </div>
+            <div>
+                <label for="services">What was the service you used? (Check all that apply) </label><br>
+                <input type="checkbox" name="webdev" id="webdev">
+                <label for="webdev">Web Development</label><br>
+                <input type="checkbox" name="design" id="design">
+                <label for="design">Design</label><br>
+                <input type="checkbox" name="copywriting" id="copywriting">
+                <label for="copywriting">Copywriting</label>
+            </div>
+            <div>
+                <label for="suggestions">Any comments or suggestions?</label>
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Enter your comment here...">
+                </textarea>
+            </div>
+        </form>
+        <button type="submit" form="survey-form" value="Submit">Submit</button>
+    </main>
+    <footer>
+        <p><a href="#">Vanity Espinosa</a> created this survey form, in which <a href="https://www.freecodecamp.org/learn">freeCodeCamp's</a> free courses inspired her to create</p>
+        <p>Vanity Espinosa <i class="far fa-copyright"></i> 2020</p>
+    </footer>
+</body>
+</html>
