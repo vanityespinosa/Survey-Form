@@ -1,0 +1,203 @@
+/*----------------------------------------------------------------------------
+                          Mobile Design First / Fallback
+------------------------------------------------------------------------------*/
+
+/*********************************
+    Global Styles
+*********************************/
+:root {
+    /* Primary Colors */
+    --black: #000000;
+    --black-rgba: rgba(0, 0, 0, 0.8);
+    --silver: #e8e8e8;
+    --gold: #febf10;
+    --gold-rgba: rgba(254, 191, 16, 0.5);
+
+    /* Secondary Colors */
+    --purple: #843393;
+    --red: #CB2027;
+
+    /* Tertiary Colors */
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    background-color: var(--gold);
+    background: linear-gradient();
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+}
+button {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 2px;
+    background-color: var(--red);
+    color: var(--white);
+    font-size: 1.25rem;
+}
+button:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--red);
+}
+a {
+    color: var(--purple);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: var(--red);
+}
+
+/*********************************
+    Header Styles
+*********************************/
+header {
+    background-color: var(--black);
+    padding: 1rem 0;
+}
+header .sm-logo img{
+    width: 3.5rem;
+}
+header .full-logo {
+    display: none;
+}
+
+/*********************************
+    Main Styles
+*********************************/
+main {
+    padding: 2rem 1.5rem;
+}
+
+/***** Heading Section *****/
+#heading {
+    padding-bottom: 1.5rem;
+}
+#heading h1 {
+    margin-bottom: 0.5rem;
+}
+#heading p {
+    font-style: italic;
+}
+
+/***** Form Section *****/
+#survey-form {
+    color: var(--silver);
+    background-color: var(--black);
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: left;
+    margin-bottom: 1.5rem;
+}
+#survey-form .spacing-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+#survey-form .spacing-input label {
+    padding-bottom: 0.5rem;
+}
+#survey-form .spacing-input input,
+#survey-form .spacing-input select {
+    height: 2rem;
+    border: none;
+    border-radius: 2px;
+    padding: 0.5rem;
+}
+#survey-form .spacing-selection {
+    margin-bottom: 1rem;
+}
+#survey-form .spacing-selection p {
+    padding-bottom: 0.5rem;
+}
+#survey-form .spacing-selection .special-label,
+#survey-form .txtarea label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+#survey-form .txtarea textarea {
+    width: 100%;
+    height: 15rem;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+/*********************************
+    Footer Styles
+*********************************/
+footer {
+    background-color: var(--silver);
+    padding: 2rem 1.5rem;
+}
+footer p:first-child {
+    margin-bottom: 1.5rem;
+}
+
+/*----------------------------------------------------------------------------
+                          Tablet Design
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 720px) {
+    /*********************************
+        Global Styles
+    *********************************/
+    body {
+        background: linear-gradient(var(--gold-rgba), var(--gold-rgba)), 
+        url("imgs/lg-bg-image.jpg"), no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    /*********************************
+        Header Styles
+    *********************************/
+    header {
+        min-height: 6vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .sm-logo{
+        display: none;
+    }
+    header .full-logo{
+        display: block;
+    }
+    header .full-logo img {
+        width: 25rem;
+    }
+    /*********************************
+        Main Styles
+    *********************************/
+    main {
+        height: 84vh;
+    }
+    /***** Form Section *****/
+    #survey-form {
+        background-color: var(--black-rgba);
+    }
+    /*********************************
+        Footer Styles
+    *********************************/
+    footer {
+        height: 10vh;
+    }
+}
+/*----------------------------------------------------------------------------
+                          Desktop Design
+------------------------------------------------------------------------------*/
+@media only screen and (min-width: 1000px) {
+
+}
