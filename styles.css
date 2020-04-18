@@ -11,7 +11,7 @@
     --black-rgba: rgba(0, 0, 0, 0.8);
     --silver: #e8e8e8;
     --gold: #febf10;
-    --gold-rgba: rgba(254, 191, 16, 0.5);
+    --gold-rgba: rgba(254, 191, 16, 0.35);
 
     /* Secondary Colors */
     --purple: #843393;
@@ -35,7 +35,6 @@ body {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
     background-color: var(--gold);
-    background: linear-gradient();
 }
 h1 {
     font-family: 'Roboto', sans-serif;
@@ -93,6 +92,7 @@ main {
 }
 #heading p {
     font-style: italic;
+
 }
 
 /***** Form Section *****/
@@ -118,6 +118,16 @@ main {
     border: none;
     border-radius: 2px;
     padding: 0.5rem;
+}
+/* Remove arrows on right side for Chrome, IE, Edge, Safari*/
+#survey-form .spacing-input input[type=number]::-webkit-inner-spin-button, 
+#survey-form .spacing-input input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none; 
+    margin: 0; 
+}
+/* Remove arrows on right side for Firefox */
+#survey-form .spacing-input input[type=number] {
+    -moz-appearance:textfield;
 }
 #survey-form .spacing-selection {
     margin-bottom: 1rem;
@@ -199,5 +209,37 @@ footer p:first-child {
                           Desktop Design
 ------------------------------------------------------------------------------*/
 @media only screen and (min-width: 1000px) {
+    /*********************************
+        Global Styles
+    *********************************/
+    body {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    /*********************************
+        Main Styles
+    *********************************/
+    main {
+        height: auto;
+    }
+    /***** Whole Form Section *****/
+    #whole-form {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 
+    /***** Form Section *****/
+    #survey-form .spacing-input input,
+    #survey-form .spacing-input select {
+        height: 3rem;
+        font-size: 1.25rem;
+    }
+    /*********************************
+        Footer Styles
+    *********************************/
+    footer {
+        height: 12vh;
+    }
 }

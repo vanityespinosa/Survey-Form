@@ -26,54 +26,56 @@
             <h1>Vsae Studios Survey Form</h1>
             <p>Thank you for taking the time to let us know how we did!</p>
         </div>
-        <form action="" id="survey-form">
-            <div class="spacing-input">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Enter your name">
-            </div>
-            <div class="spacing-input">
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your Email">
-            </div>
-            <div class="spacing-input">
-                <label for="age">Age (optional)</label>
-                <input type="number" name="age" id="age" placeholder="Age">
-            </div>
-            <div class="spacing-input">
-                <label for="role">Which option best describes your current role?</label>
-                <select name="role" id="role" required>
-                    <option value="" disabled selected>Select current role</option>
-                    <option value="freelancer">Freelancer</option>
-                    <option value="sm-business-owner">Small Business Owner</option>
-                    <option value="entreprenuer">Entreprenuer</option>
-                    <option value="student">Student</option>
-                </select>
-            </div>
-            <div class="spacing-selection">
-                <p>Would you recommend the services Vsae Studios provides?</p>
-                <input type="radio" name="services" id="definitely" value="definitely" checked>
-                <label for="definitely">Definitely</label><br>
-                <input type="radio" name="services" id="maybe">
-                <label for="maybe">Maybe</label><br>
-                <input type="radio" name="services" id="notsure">
-                <label for="notsure">Not sure</label>
-            </div>
-            <div class="spacing-selection">
-                <label for="services" class="special-label">What was the service you used? (Check all that apply)</label>
-                <input type="checkbox" name="webdev" id="webdev">
-                <label for="webdev">Web Development</label><br>
-                <input type="checkbox" name="design" id="design">
-                <label for="design">Design</label><br>
-                <input type="checkbox" name="copywriting" id="copywriting">
-                <label for="copywriting">Copywriting</label>
-            </div>
-            <div class="txtarea">
-                <label for="suggestions">Any comments or suggestions?</label>
-                <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here...">
-                </textarea>
-            </div>
-        </form>
-        <button type="submit" form="survey-form" value="Submit">Submit</button>
+        <div id="whole-form">
+            <form action="" id="survey-form">
+                <div class="spacing-input">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="spacing-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email">
+                </div>
+                <div class="spacing-input">
+                    <label for="age">Age (optional)</label>
+                    <input type="number" name="age" id="age" placeholder="Age">
+                </div>
+                <div class="spacing-input">
+                    <label for="role">Which option best describes your current role?</label>
+                    <select name="role" id="role" required>
+                        <option value="" disabled selected>Select current role</option>
+                        <option value="freelancer">Freelancer</option>
+                        <option value="sm-business-owner">Small Business Owner</option>
+                        <option value="entreprenuer">Entreprenuer</option>
+                        <option value="student">Student</option>
+                    </select>
+                </div>
+                <div class="spacing-selection">
+                    <p>Would you recommend the services Vsae Studios provides?</p>
+                    <input type="radio" name="services" id="definitely" value="definitely" checked>
+                    <label for="definitely">Definitely</label><br>
+                    <input type="radio" name="services" id="maybe">
+                    <label for="maybe">Maybe</label><br>
+                    <input type="radio" name="services" id="notsure">
+                    <label for="notsure">Not sure</label>
+                </div>
+                <div class="spacing-selection">
+                    <label for="services" class="special-label">What was the service you used? (Check all that apply)</label>
+                    <input type="checkbox" name="webdev" id="webdev">
+                    <label for="webdev">Web Development</label><br>
+                    <input type="checkbox" name="design" id="design">
+                    <label for="design">Design</label><br>
+                    <input type="checkbox" name="copywriting" id="copywriting">
+                    <label for="copywriting">Copywriting</label>
+                </div>
+                <div class="txtarea">
+                    <label for="suggestions">Any comments or suggestions?</label>
+                    <textarea name="suggestions" id="suggestions" placeholder="Enter your comment here...">
+                    </textarea>
+                </div>
+            </form>
+            <button type="submit" form="survey-form" value="Submit">Submit</button>
+        </div>
     </main>
     <footer>
         <p>
